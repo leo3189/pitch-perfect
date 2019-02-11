@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1jN-Lz-pQa">
-    <device id="retina6_1" orientation="portrait">
+    <device id="retina6_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -19,14 +19,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OqU-ob-yOR">
-                                <rect key="frame" x="129.5" y="370.5" width="155" height="155"/>
+                                <rect key="frame" x="129.66666666666666" y="370.66666666666669" width="154.99999999999997" height="155.00000000000006"/>
                                 <state key="normal" image="Record"/>
                                 <connections>
                                     <action selector="recordButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bs9-5c-sRb"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to Start recording" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="none" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="76j-3t-BPm">
-                                <rect key="frame" x="124.5" y="117" width="165" height="20"/>
+                                <rect key="frame" x="124.66666666666669" y="117" width="165" height="20"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -81,7 +81,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SVE-Sd-8rx">
-                                <rect key="frame" x="191.5" y="428" width="31" height="40"/>
+                                <rect key="frame" x="191.66666666666666" y="428" width="31" height="40"/>
                                 <state key="normal" image="Pause"/>
                                 <connections>
                                     <action selector="pauseBtnTapped:" destination="afK-gg-XsV" eventType="touchUpInside" id="R1R-MB-sK9"/>
@@ -102,14 +102,14 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h1G-KG-izR">
-                                <rect key="frame" x="283" y="292" width="90" height="90"/>
+                                <rect key="frame" x="99" y="292" width="90" height="90"/>
                                 <state key="normal" image="Slow"/>
                                 <connections>
                                     <action selector="playSoundBtn:" destination="afK-gg-XsV" eventType="touchUpInside" id="DTo-uh-kG5"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="4" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5uW-Qi-Y4Q">
-                                <rect key="frame" x="327" y="512" width="90" height="90"/>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5uW-Qi-Y4Q">
+                                <rect key="frame" x="99" y="512" width="90" height="90"/>
                                 <state key="normal" image="Echo"/>
                                 <connections>
                                     <action selector="playSoundBtn:" destination="afK-gg-XsV" eventType="touchUpInside" id="5qs-As-6Fu"/>
@@ -126,56 +126,66 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select a sound filter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zon-jQ-pLx">
-                                <rect key="frame" x="131.5" y="229" width="151" height="20"/>
+                                <rect key="frame" x="131.66666666666666" y="229" width="150.99999999999997" height="20"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" tag="5" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a03-PO-N5N">
-                                <rect key="frame" x="474" y="512" width="90" height="90"/>
-                                <state key="normal" image="Reverb"/>
-                                <connections>
-                                    <action selector="playSoundBtn:" destination="afK-gg-XsV" eventType="touchUpInside" id="25m-42-06x"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xBl-0a-vz5">
-                                <rect key="frame" x="474" y="292" width="90" height="90"/>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xBl-0a-vz5">
+                                <rect key="frame" x="235" y="292" width="90" height="90"/>
                                 <state key="normal" image="Fast"/>
                                 <connections>
                                     <action selector="playSoundBtn:" destination="afK-gg-XsV" eventType="touchUpInside" id="isf-bN-jZ2"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a03-PO-N5N">
+                                <rect key="frame" x="235" y="512" width="90" height="90"/>
+                                <state key="normal" image="Reverb"/>
+                                <connections>
+                                    <action selector="playSoundBtn:" destination="afK-gg-XsV" eventType="touchUpInside" id="25m-42-06x"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.2448900044" green="0.30909186599999999" blue="0.3591428995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="5uW-Qi-Y4Q" firstAttribute="centerX" secondItem="0mC-Eu-kQw" secondAttribute="centerX" constant="-63" id="1RJ-5W-JZn"/>
                             <constraint firstItem="e1J-35-8Xk" firstAttribute="top" secondItem="SVE-Sd-8rx" secondAttribute="bottom" constant="175" id="4NV-qX-pEu"/>
                             <constraint firstItem="4Qo-U8-cb2" firstAttribute="centerY" secondItem="SVE-Sd-8rx" secondAttribute="centerY" id="4fd-U6-FVe"/>
-                            <constraint firstItem="e1J-35-8Xk" firstAttribute="top" secondItem="a03-PO-N5N" secondAttribute="bottom" constant="41" id="9HN-sX-aSu"/>
+                            <constraint firstItem="h1G-KG-izR" firstAttribute="centerX" secondItem="0mC-Eu-kQw" secondAttribute="centerX" constant="-63" id="8Uc-xM-MML"/>
+                            <constraint firstItem="xBl-0a-vz5" firstAttribute="centerY" secondItem="0mC-Eu-kQw" secondAttribute="centerY" constant="-73" id="8xV-zz-PYg"/>
                             <constraint firstItem="SVE-Sd-8rx" firstAttribute="centerY" secondItem="0mC-Eu-kQw" secondAttribute="centerY" id="CrO-VH-Xxf"/>
                             <constraint firstItem="e1J-35-8Xk" firstAttribute="centerX" secondItem="euJ-vD-zUK" secondAttribute="centerX" id="EV9-vl-shJ"/>
+                            <constraint firstItem="xBl-0a-vz5" firstAttribute="centerX" secondItem="0mC-Eu-kQw" secondAttribute="centerX" constant="62" id="GFp-h5-YXZ"/>
                             <constraint firstItem="aJ2-4H-dM0" firstAttribute="leading" secondItem="SVE-Sd-8rx" secondAttribute="trailing" constant="70.5" id="Id8-4a-ITs"/>
+                            <constraint firstItem="5uW-Qi-Y4Q" firstAttribute="centerY" secondItem="0mC-Eu-kQw" secondAttribute="centerY" constant="81" id="JvW-9a-JZ3"/>
                             <constraint firstItem="aJ2-4H-dM0" firstAttribute="centerY" secondItem="SVE-Sd-8rx" secondAttribute="centerY" id="KX9-n6-dLB"/>
+                            <constraint firstItem="a03-PO-N5N" firstAttribute="centerY" secondItem="0mC-Eu-kQw" secondAttribute="centerY" constant="109" id="L3s-mr-dXd"/>
                             <constraint firstItem="SVE-Sd-8rx" firstAttribute="centerY" secondItem="0mC-Eu-kQw" secondAttribute="centerY" id="MfF-Jq-zlB"/>
                             <constraint firstItem="SVE-Sd-8rx" firstAttribute="centerX" secondItem="0mC-Eu-kQw" secondAttribute="centerX" id="PXI-7u-E4W"/>
+                            <constraint firstItem="a03-PO-N5N" firstAttribute="centerX" secondItem="0mC-Eu-kQw" secondAttribute="centerX" constant="62" id="Sqq-Gs-Mkc"/>
                             <constraint firstItem="4Qo-U8-cb2" firstAttribute="centerY" secondItem="euJ-vD-zUK" secondAttribute="centerY" id="SuB-rr-DRG"/>
                             <constraint firstItem="SVE-Sd-8rx" firstAttribute="leading" secondItem="4Qo-U8-cb2" secondAttribute="trailing" constant="61.5" id="TPx-7P-klS"/>
-                            <constraint firstItem="e1J-35-8Xk" firstAttribute="top" secondItem="5uW-Qi-Y4Q" secondAttribute="bottom" constant="41" id="UnO-tc-6bM"/>
+                            <constraint firstItem="xBl-0a-vz5" firstAttribute="centerY" secondItem="0mC-Eu-kQw" secondAttribute="centerY" constant="-111" id="VMs-5x-u1L"/>
                             <constraint firstItem="SVE-Sd-8rx" firstAttribute="leading" secondItem="4Qo-U8-cb2" secondAttribute="trailing" constant="61.5" id="Vao-sT-GDr"/>
                             <constraint firstItem="Zon-jQ-pLx" firstAttribute="top" secondItem="euJ-vD-zUK" secondAttribute="top" constant="7" id="YlN-eS-718"/>
+                            <constraint firstItem="5uW-Qi-Y4Q" firstAttribute="centerY" secondItem="0mC-Eu-kQw" secondAttribute="centerY" constant="109" id="Yu0-0g-wT9"/>
                             <constraint firstItem="SVE-Sd-8rx" firstAttribute="centerX" secondItem="0mC-Eu-kQw" secondAttribute="centerX" id="Zic-q1-IsX"/>
-                            <constraint firstItem="xBl-0a-vz5" firstAttribute="top" secondItem="Zon-jQ-pLx" secondAttribute="bottom" constant="43" id="Zv6-QB-1Aj"/>
                             <constraint firstItem="aJ2-4H-dM0" firstAttribute="centerY" secondItem="SVE-Sd-8rx" secondAttribute="centerY" id="dXb-0I-V4R"/>
                             <constraint firstItem="SVE-Sd-8rx" firstAttribute="top" secondItem="Zon-jQ-pLx" secondAttribute="bottom" constant="179" id="eO2-yi-Wxi"/>
+                            <constraint firstItem="h1G-KG-izR" firstAttribute="centerY" secondItem="0mC-Eu-kQw" secondAttribute="centerY" constant="-111" id="hhX-RN-97U"/>
                             <constraint firstItem="Zon-jQ-pLx" firstAttribute="centerX" secondItem="SVE-Sd-8rx" secondAttribute="centerX" id="hpa-5n-8FI"/>
                             <constraint firstItem="e1J-35-8Xk" firstAttribute="centerX" secondItem="SVE-Sd-8rx" secondAttribute="centerX" id="kvk-z1-lex"/>
+                            <constraint firstItem="a03-PO-N5N" firstAttribute="centerY" secondItem="0mC-Eu-kQw" secondAttribute="centerY" constant="81" id="lix-fo-Rm5"/>
                             <constraint firstItem="aJ2-4H-dM0" firstAttribute="leading" secondItem="SVE-Sd-8rx" secondAttribute="trailing" constant="70.5" id="lxc-jm-ZQQ"/>
-                            <constraint firstItem="h1G-KG-izR" firstAttribute="top" secondItem="Zon-jQ-pLx" secondAttribute="bottom" constant="8" id="mfo-IN-N3s"/>
                             <constraint firstItem="Zon-jQ-pLx" firstAttribute="centerX" secondItem="euJ-vD-zUK" secondAttribute="centerX" id="nS5-1i-fUv"/>
+                            <constraint firstItem="a03-PO-N5N" firstAttribute="centerX" secondItem="0mC-Eu-kQw" secondAttribute="centerX" constant="73" id="nZ6-Cl-3Dz"/>
+                            <constraint firstItem="5uW-Qi-Y4Q" firstAttribute="centerX" secondItem="0mC-Eu-kQw" secondAttribute="centerX" constant="-63" id="rZU-UR-B21"/>
                             <constraint firstItem="4Qo-U8-cb2" firstAttribute="centerY" secondItem="SVE-Sd-8rx" secondAttribute="centerY" id="rkx-xo-O9F"/>
                             <constraint firstItem="SVE-Sd-8rx" firstAttribute="leading" secondItem="4Qo-U8-cb2" secondAttribute="trailing" constant="61.5" id="tYd-qG-gJ7"/>
-                            <constraint firstItem="h1G-KG-izR" firstAttribute="top" secondItem="Zon-jQ-pLx" secondAttribute="bottom" constant="43" id="ve9-qQ-TKf"/>
+                            <constraint firstItem="xBl-0a-vz5" firstAttribute="centerX" secondItem="0mC-Eu-kQw" secondAttribute="centerX" constant="73" id="uYN-VA-Jum"/>
+                            <constraint firstItem="h1G-KG-izR" firstAttribute="centerX" secondItem="0mC-Eu-kQw" secondAttribute="centerX" constant="-63" id="vbf-Nb-hpg"/>
+                            <constraint firstItem="h1G-KG-izR" firstAttribute="centerY" secondItem="0mC-Eu-kQw" secondAttribute="centerY" constant="-73" id="wbw-pA-hZq"/>
                             <constraint firstItem="euJ-vD-zUK" firstAttribute="bottom" secondItem="e1J-35-8Xk" secondAttribute="bottom" id="weo-94-vfN"/>
-                            <constraint firstItem="h1G-KG-izR" firstAttribute="leading" secondItem="euJ-vD-zUK" secondAttribute="leading" constant="283" id="zsz-8b-rwC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="euJ-vD-zUK"/>
                         <variation key="default">
@@ -183,13 +193,21 @@
                                 <exclude reference="weo-94-vfN"/>
                                 <exclude reference="SuB-rr-DRG"/>
                                 <exclude reference="rkx-xo-O9F"/>
+                                <exclude reference="8Uc-xM-MML"/>
+                                <exclude reference="wbw-pA-hZq"/>
                                 <exclude reference="YlN-eS-718"/>
                                 <exclude reference="nS5-1i-fUv"/>
+                                <exclude reference="JvW-9a-JZ3"/>
+                                <exclude reference="rZU-UR-B21"/>
                                 <exclude reference="MfF-Jq-zlB"/>
                                 <exclude reference="PXI-7u-E4W"/>
                                 <exclude reference="TPx-7P-klS"/>
                                 <exclude reference="tYd-qG-gJ7"/>
+                                <exclude reference="8xV-zz-PYg"/>
+                                <exclude reference="GFp-h5-YXZ"/>
                                 <exclude reference="EV9-vl-shJ"/>
+                                <exclude reference="Sqq-Gs-Mkc"/>
+                                <exclude reference="lix-fo-Rm5"/>
                                 <exclude reference="Id8-4a-ITs"/>
                                 <exclude reference="dXb-0I-V4R"/>
                             </mask>
@@ -200,10 +218,17 @@
                                 <exclude reference="4fd-U6-FVe"/>
                                 <exclude reference="SuB-rr-DRG"/>
                                 <include reference="rkx-xo-O9F"/>
-                                <exclude reference="ve9-qQ-TKf"/>
+                                <include reference="8Uc-xM-MML"/>
+                                <exclude reference="hhX-RN-97U"/>
+                                <exclude reference="vbf-Nb-hpg"/>
+                                <include reference="wbw-pA-hZq"/>
                                 <include reference="YlN-eS-718"/>
                                 <exclude reference="hpa-5n-8FI"/>
                                 <include reference="nS5-1i-fUv"/>
+                                <exclude reference="1RJ-5W-JZn"/>
+                                <include reference="JvW-9a-JZ3"/>
+                                <exclude reference="Yu0-0g-wT9"/>
+                                <include reference="rZU-UR-B21"/>
                                 <exclude reference="CrO-VH-Xxf"/>
                                 <include reference="MfF-Jq-zlB"/>
                                 <include reference="PXI-7u-E4W"/>
@@ -212,12 +237,17 @@
                                 <exclude reference="Zic-q1-IsX"/>
                                 <exclude reference="eO2-yi-Wxi"/>
                                 <include reference="tYd-qG-gJ7"/>
-                                <exclude reference="Zv6-QB-1Aj"/>
+                                <include reference="8xV-zz-PYg"/>
+                                <include reference="GFp-h5-YXZ"/>
+                                <exclude reference="VMs-5x-u1L"/>
+                                <exclude reference="uYN-VA-Jum"/>
                                 <exclude reference="4NV-qX-pEu"/>
-                                <exclude reference="9HN-sX-aSu"/>
                                 <include reference="EV9-vl-shJ"/>
-                                <exclude reference="UnO-tc-6bM"/>
                                 <exclude reference="kvk-z1-lex"/>
+                                <exclude reference="L3s-mr-dXd"/>
+                                <include reference="Sqq-Gs-Mkc"/>
+                                <include reference="lix-fo-Rm5"/>
+                                <exclude reference="nZ6-Cl-3Dz"/>
                                 <include reference="Id8-4a-ITs"/>
                                 <exclude reference="KX9-n6-dLB"/>
                                 <include reference="dXb-0I-V4R"/>

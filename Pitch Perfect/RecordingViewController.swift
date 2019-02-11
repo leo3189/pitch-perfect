@@ -30,6 +30,19 @@ class RecordingViewController: UIViewController, AVAudioRecorderDelegate {
         if buttonSwitched {
             recordTextLbl.text = "Tap to finish recording"
             recordButton.setImage(UIImage(named: "Stop.png"), for: .normal)
+            
+            recordButton.transform = CGAffineTransform(scaleX: 0.6, y: 0.6)
+            
+            UIView.animate(withDuration: 2.0,
+                           delay: 0,
+                           usingSpringWithDamping: CGFloat(0.20),
+                           initialSpringVelocity: CGFloat(6.0),
+                           options: UIView.AnimationOptions.allowUserInteraction,
+                           animations: {
+                            self.recordButton.transform = CGAffineTransform.identity
+            },
+                           completion: { Void in()  }
+            )
 
             let dirPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as String
             let recordingName = "recordedVoice.wav"
